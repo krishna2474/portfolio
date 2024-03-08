@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna's Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 30);
+            color: #F8F7FF;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgb(22, 22, 68);
+            height: 120px;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul a {
+            text-decoration: none;
+            color: #F8F7FF;
+        }
+
+        nav ul a:hover {
+            color: rgb(169, 87, 247);
+            text-decoration: underline;
+            transition: 100ms ease-in-out;
+            font-size: 1.25rem;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        .left {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 16vh 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .firstSection img {
+            width: 80%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
+        .leftSection .btn{
+            background-color: #161644df;
+            color: white;
+            border: 1px solid white;
+            border-radius: 15px;
+            cursor: pointer;
+            padding :15px 25px;
+            font-size: 1.3rem;
+        }
+
+        .purple {
+            color: rgb(169, 87, 247)
+        }
+
+        .text-gray {
+            color: rgb(157, 155, 155);
+            font-size: 1.5rem;
+        }
+
+        #element {
+            color: rgb(169, 87, 247);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        hr {
+            border: 0;
+            background: rgb(22, 22, 68);
+            height: 5px;
+            margin: 20px 0 5px 0;
+        }
+
+        .secondSection h1 {
+            font-size: 3rem;
+        }
+
+        .secondSection .horizontal-line {
+            width: 80vw;
+            height: 2px;
+            margin: 70px 0;
+            background: #F8F7FF;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.3rem;
+        }
+
+        .secondSection .vertical-line {
+            width: 1px;
+            height: 100px;
+            background: #F8F7FF;
+            position: relative;
+            top: -70px;
+        }
+
+        .img-top {
+            width: 2.5vw;
+            position: relative;
+            top: -60px;
+            left: -17px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 64px;
+            left: -19px;
+            width: 200px;
+            text-align: center;
+            font-weight: 700;
+            color: #F8F7FF;
+        }
+
+        .vertical-desc {
+            text-align: center;
+            position: relative;
+            top: 70px;
+            left: 8px;
+            width: 150px;
+            font-size: 1.1rem;
+            color: rgb(157,155,155);
+        }
+
+        footer{
+            max-width: 100%;
+            background-color:rgb(7, 7, 80);;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        footer .footer-first{
+            font-size: 2rem;
+            text-align: center;
+            width: 400px;
+        }
+
+        footer ul{
+            list-style-type: none;
+        }
+        footer ul li{
+            margin: 10px 0;
+        }
+
+        footer .footer-rights{
+            text-align: center;
+            color: rgb(157, 155, 155);
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Krishna's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Krishna</span>
+                <div>and I am a passionate</div>
+                <div><span id="element"></span></div>
+
+                <button class="btn">Download Resume</button>
+                <button class="btn">Visit GitHub</button>
+            </div>
+            <div class="rightSection"><img src="bg.png" alt=""></div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What have I done so far..</span>
+            <h1>Work Experience</h1>
+            <div class="horizontal-line"></div>
+            <div class="box">
+                <div class="vertical-line">
+                    <img src="html-5.png" alt="" class="img-top">
+                    <div class="vertical-title">
+                        HTML Developer (2012-2014)
+                    </div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto illo
+                        suscipit in magnam </div>
+                </div>
+                <div class="vertical-line">
+                    <img src="node.png" alt="" class="img-top">
+                    <div class="vertical-title">
+                        Node.js Developer (2014-2016)
+                    </div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto illo
+                        suscipit in magnam </div>
+                </div>
+                <div class="vertical-line">
+                    <img src="react.png" alt="" class="img-top">
+                    <div class="vertical-title">
+                        React Developer (2016-2018)
+                    </div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto illo
+                        suscipit in magnam </div>
+                </div>
+                <div class="vertical-line">
+                    <img src="mean.png"" class="img-top">
+                    <div class="vertical-title">
+                        MEAN Developer (2018-2020)
+                    </div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto illo
+                        suscipit in magnam </div>
+                </div>
+                <div class="vertical-line">
+                    <img src="html-5.png" alt="" class="img-top">
+                    <div class="vertical-title">
+                        MERN Developer (2020-2024)
+                    </div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto illo
+                        suscipit in magnam </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+<hr>
+    <footer>
+        <div class="flex">
+        <div class="footer-first">Krishna's Developer Portfolio</div>
+        <div class="footer-second">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Projects</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="footer-third">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Projects</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="footer-fourth">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Projects</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-rights">
+        Copyright &copy; | krishnasportfolio.com | All Rights Reserved
+    </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Video Editor'],
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
